@@ -201,29 +201,8 @@ public class StepDefinitions {
 		
 		}
 		
-			/*
-			hermesMethods = new HermesMethods();
-			if (hermesMethods.verification(driver) == true) {
 		
-
-			  String val2 = driver.findElement(By.cssSelector(".slick-cell.l0.r0.alignRight")).getText();
-			 // Assert.assertTrue(val2.contains(valeur4));
-			    
-			
-			    if (val2.equals(valeur4)) {
-				    System.out.print(val2);  
-				    System.out.print("C'est La bonne valeur");  	
-			    } else {
-			    	
-				   Assert.fail("mauvaise valeur"); 
-			    }
-			}
-			else {
-				Assert.fail("Erreur");
-			}
 		
-				*/
-		}
 	
 	
 	
