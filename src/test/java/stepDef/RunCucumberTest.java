@@ -7,7 +7,7 @@ import io.cucumber.testng.*;
 @CucumberOptions(features="src/test/resources/cucumber", glue= {"stepDef"},
 monochrome=true, plugin= {"pretty","junit:target/JunitReports/reports.xml","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 		"json:target/JsonReports/reports.json",
-		"html:target/HtmlReports/reports.html"})
+		"html:target/HtmlReports/reports.html","testng:target/TestngReports/reports.xml"})
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests{
 }
