@@ -9,7 +9,7 @@ Feature: Naviguer sur sit Hermes
 				Feature: Naviguer sur un site web
 				 Test a realiser pour naviguer sur un site web
 				 
-				  Example: premier test
+				  #Example: premier test
 				    Given Que je suis sur le site 
 						And Que je saisisse mes identifiants et que je me connecte
 						And Dans le menu M3 je navigue vers la page de tableau de valeur
