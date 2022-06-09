@@ -51,7 +51,7 @@ public class StepDefinitions {
 	
 
 
-	/*
+	
 	@Before
 	public void SecondSD() throws MalformedURLException {
 		String string = "chrome";	
@@ -75,25 +75,15 @@ public class StepDefinitions {
 			driver = new FirefoxDriver();
 		}
 	}
-	*/
+	
 		
 	
 	@Given("Que je suis sur le site")
 	public void visit_site_hermes() throws MalformedURLException {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Abdelrazak\\chromedriver.exe");
-		driver = new ChromeDriver();
-		
-		//DesiredCapabilities capa = new DesiredCapabilities(); 
 		//System.setProperty("webdriver.chrome.driver","C:\\Abdelrazak\\chromedriver.exe");
-		 //driver = new RemoteWebDriver(new URL(" 159.122.175.120:30723"),capa);
-		//capa.setBrowserName("chrome");
-		//capa.setPlatform(Platform.ANY);
-		//driver = new RemoteWebDriver(new URL("https://selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud"), capa);
-	
-	
-	driver.get("https://mingle-portal.eu1.inforcloudsuite.com/IBM1_DEM/dd01c7cd-9f46-418c-be0a-9e5612067c74?favoriteContext=%7B%22type%22%3A%22page%22%2C%22id%22%3A%229d2e4bf6-eb67-42e9-856c-15415d03c3e6%22%2C%22source%22%3A7%7D&LogicalId=lid://infor.homepages.1");
-	}
+		driver.get("https://mingle-portal.eu1.inforcloudsuite.com/IBM1_DEM/dd01c7cd-9f46-418c-be0a-9e5612067c74?favoriteContext=%7B%22type%22%3A%22page%22%2C%22id%22%3A%229d2e4bf6-eb67-42e9-856c-15415d03c3e6%22%2C%22source%22%3A7%7D&LogicalId=lid://infor.homepages.1");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	}
 	
 	@And("Que je saisisse mes identifiants et que je me connecte")
 		public void saisi_donnee() throws NoSuchAlgorithmException, NoSuchProviderException {
@@ -192,14 +182,12 @@ public class StepDefinitions {
 		  
 		  int i = 0;
 		  
-		  int count = 5;
+		  int count = 12;
 		  for(i = 1;i <= count;i++) {
-			if(i == 6 ) {
-				continue;
-			}
+			
 			if(driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[6]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/div/div[4]/div[3]/div/div["+i+"]/div[14]")).isDisplayed()){
 				  String str = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[6]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/div/div[4]/div[3]/div/div["+i+"]/div[14]")).getText();
-						nums.add(str);
+				  nums.add(str);
 				  System.out.println(nums.get(i-1));
 			  }
 			
@@ -208,34 +196,13 @@ public class StepDefinitions {
 			  if(nums.get(i-1) == valeur4) {
 					 System.out.println("C'est bien la bonne valeur");
 					 
-				 } else {
-					 Assert.fail("Valeur Introuvable");
 				 } 
 		  }
 		
-			/*
-			hermesMethods = new HermesMethods();
-			if (hermesMethods.verification(driver) == true) {
-		
-
-			  String val2 = driver.findElement(By.cssSelector(".slick-cell.l0.r0.alignRight")).getText();
-			 // Assert.assertTrue(val2.contains(valeur4));
-			    
-			
-			    if (val2.equals(valeur4)) {
-				    System.out.print(val2);  
-				    System.out.print("C'est La bonne valeur");  	
-			    } else {
-			    	
-				   Assert.fail("mauvaise valeur"); 
-			    }
-			}
-			else {
-				Assert.fail("Erreur");
-			}
-		
-				*/
 		}
+		
+		
+		
 	
 	
 	
