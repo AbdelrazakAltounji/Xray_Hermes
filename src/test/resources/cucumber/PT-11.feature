@@ -19,28 +19,7 @@ Feature: Naviguer sur sit Hermes
 						And Que je rempli les trois champs: numero programme <valeur4> , date de fin et quantite planifiee <valeur3> et je verifie les informations
 						And Dans la liste deroulante Ordre de tri, je selectionne <valeur5>
 						And Je verifie que mon numero de programme est <valeur4>
-					 
-						
-					
-			#Scenario: Effacer la valeur rentree
-				#Feature: Effacer la valeur
-				
-					#Example: deuxieme test
-					#Given Je navigue sur le site Hermes en rentrant les valeurs Tpa:<valeur1> et Code article:<valeur2>
-					#And Appuie sur la fleche pour acceder au tableau de valeur 
-					#And appuyer sur utiliser
-					#And selectioner la valeur a supprimer <valeur4> et appuyer sur SUPPR+ENTRER
-					#And revenir a la page de depart
-					
-			#Scenario: Erreur mot de passe
-				#Feature: se tromper de mot de passe
-				
-			#	Example:troisieme test
-				#Given Je navigue vers le site Hermes
-				#And Je rentre mon identifiant et le mot de passe <valeur6>
 		
-					
-					
 					Examples:
 					
 					| valeur1 |     valeur2    | valeur3 |  valeur4 | valeur5        					 | valeur6 |
