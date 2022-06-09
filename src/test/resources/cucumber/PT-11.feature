@@ -44,6 +44,6 @@ Feature: Naviguer sur sit Hermes
 					Examples:
 					
 					| valeur1 |     valeur2    | valeur3 |  valeur4 | valeur5        					 | valeur6 |
-					|  "B01"   | "Y3003-Y01-012" |      "55" |   "125700" | "1-Resp/Whse/Prod" |"123458" |
+					|  "B01"   | "Y3003-Y01-012" |      "55" |   "125701" | "1-Resp/Whse/Prod" |"123458" |
 				#	|  "B01"   | "Y3003-Y01-012" |      "55" |   "125707" | "1-Resp/Whse/Prod" | "1234"  |
 					 
