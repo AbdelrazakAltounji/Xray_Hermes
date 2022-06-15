@@ -9,7 +9,7 @@ IBM Test Platform Cloud est composé de ces éléments :
 
 -   **[Selenium Grid](https://www.selenium.dev/documentation/en/grid/)** permet d'exécuter des tests sur plusieurs navigateurs conteneurisés à partir d'un point central, avec une vaste combinaison de navigateur.
 
--   **[Jenkins](https://www.jenkins.io)** est un outil CI/CD avec lequel on peut créer nos pipelines qui seront charger de récupérer nos codes sources.
+-   **[Jenkins](https://www.jenkins.io)** est un outil CI/CD avec lequel on peut créer nos pipelines qui seront charger d'exectuer et récupérer nos codes sources.
 
 - **[SquashTM](https://www.squashtest.com/product-squash-tm)** c'est un outil de test management qui va declencher notre pipeline lorsque on veut.
  
