@@ -8,4 +8,5 @@ Sommaire
 4) Lancer SquashTM ou Jira Xray
 5) Lancement de Jenkins
 6) Selenium Grid
+7) Realisations de test sur le LocalHost
 
