@@ -15,7 +15,7 @@ IBM Test Platform Cloud est composé de ces éléments :
  
 
 ---
-# Sommaire
+
 
 ## 1) Mettre en place un cluster de travail
 ## 2) Cloner le repertoire git pour avoir tous les fichier de configurations kubernetes des images docker 
