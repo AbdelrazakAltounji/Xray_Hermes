@@ -77,11 +77,11 @@ Tout d'abord il faut consacrer un environment cloud de travail a la plateforme.L
 ## 4) Etape 4: Selenium Grid
 Selenium Grid nous permet d'executer nos cas de tests sur plusieurs navigateur en parallele.On peut demarrer Selenium Grid en local ou sur le cloud.
 -   sur le local:
-    ```
+   ```
    1)	Executer la commande *docker pull selenium/standalone-chrome* 
    2)	Executer la commande *docker run -d -p 4444:4444 -v ${pwd}:/dev/shm selenium/standalone-chrome*
    3)	lancer localhost:4444 sur le navigateur
-      ```
+   ```
 -   sur le cloud:
    1) Il suffit de lancer les pods a l'interieur de kubernetes avec la commande *>kubectl apply -f ./selenium*
 
