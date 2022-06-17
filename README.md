@@ -65,26 +65,26 @@ Tout d'abord il faut consacrer un environment cloud de travail a la plateforme.L
    ```
   1) On doit télécharger jenkins.war du site (https://www.jenkins.io/download/)
   2) Ensuite, dans notre terminal on se place dans le dossier où se trouve jenkins.war
-  3) On execute la commande *>java -jar jenkins.war --httpPort=8080*
+  3) On execute la commande >java -jar jenkins.war --httpPort=8080
   4) naviguer vers localhost:8080 sur votre navigateur
    ```
  -   On lance Jenkins dans notre environment cloud:  
   ```
   1) Ouvrir le terminal Windows et se placer dans le dossier cloner avant
-  2) lancer la commande *>kubectl apply -f* ./jenkins
-  3) executer aussi la commande *>kubectl apply -f ./ingress* pour démarrer les ingress
+  2) lancer la commande >kubectl apply -f ./jenkins
+  3) executer aussi la commande >kubectl apply -f ./ingress pour démarrer les ingress
   ```
 ## 4) Etape 4: Selenium Grid
 Selenium Grid nous permet d'executer nos cas de tests sur plusieurs navigateur en parallele.On peut demarrer Selenium Grid en local ou sur le cloud.
 -   sur le local:
    ```
-   1)	Executer la commande *docker pull selenium/standalone-chrome* 
-   2)	Executer la commande *docker run -d -p 4444:4444 -v ${pwd}:/dev/shm selenium/standalone-chrome*
+   1)	Executer la commande docker pull selenium/standalone-chrome*
+   2)	Executer la commande docker run -d -p 4444:4444 -v ${pwd}:/dev/shm selenium/standalone-chrome
    3)	lancer localhost:4444 sur le navigateur
    ```
 -   sur le cloud:
    ```
-   - Il suffit de lancer les pods a l'interieur de kubernetes avec la commande *>kubectl apply -f ./selenium*
+   - Il suffit de lancer les pods a l'interieur de kubernetes avec la commande kubectl apply -f ./selenium
    ```
 
 ## 6) Realisations de test sur le LocalHost
