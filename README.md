@@ -83,7 +83,9 @@ Selenium Grid nous permet d'executer nos cas de tests sur plusieurs navigateur e
    3)	lancer localhost:4444 sur le navigateur
    ```
 -   sur le cloud:
+   ```
    1) Il suffit de lancer les pods a l'interieur de kubernetes avec la commande *>kubectl apply -f ./selenium*
+   ```
 
 ## 6) Realisations de test sur le LocalHost
 
